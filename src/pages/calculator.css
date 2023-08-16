@@ -1,5 +1,6 @@
-body{
+.cal{
     background: rgb(73, 73, 192);
+    height: 100vh;
 }
 .cal_button{
     width: 3em;

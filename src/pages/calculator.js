@@ -4,27 +4,29 @@ import Navbar from "../components/navbar";
 
 const Calculator = () => {
   const [input, setInput] = useState("");
-  const [result, setResult] = useState("");
 
   const handleClick = (value) => {
     setInput(input + value);
+
   };
 
   const handleClear = () => {
     setInput("");
-    setResult("");
+    
   };
 
   const handleCalculate = () => {
     try {
-      setResult(eval(input).toString());
+      setInput(eval(input).toString());
     } catch (error) {
-      setResult("Error");
+      setInput("Error");
     }
   };
 
+ 
+
   return (
-    <div>
+    <div className="cal">
       <Navbar />
       <div className="container">
         <div className="row">
@@ -33,13 +35,14 @@ const Calculator = () => {
           <div className="col-md-4 cal_body mt-5">
             <div>
               <input
-                type="number"
+                type="text"
                 placeholder="0"
                 value={input}
                 className="cal_input mt-5 form-control"
-              
+              onChange={handleClick}
+              disabled={true}
               />
-              <div className="result">{result}</div>
+            
             </div>
 
             <div className="mt-3 cal_display">
@@ -106,7 +109,7 @@ const Calculator = () => {
                 <div className="col-md-3">
                 <button
                   className="cal_button form-control"
-                  onClick={() => handleClick("x")}
+                  onClick={() => handleClick("*")}
                 >
                   x
                 </button>
@@ -167,7 +170,7 @@ const Calculator = () => {
              <div className="col-md-3">
              <button
                 className="cal_button form-control"
-                onClick={() =>  ("+")}
+                onClick={() => handleClick("+")}
               >
                 +
               </button>
