@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbar from "../components/navbar";
 
 const Quizapp = () => {
   const [quiz, setQuiz] = useState(true);
@@ -60,6 +61,7 @@ const Quizapp = () => {
 
   return (
     <div>
+      <Navbar />
       {quiz && (
         //Question 1
         <div>

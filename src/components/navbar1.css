@@ -1,0 +1,23 @@
+.shop-nav{
+    padding-left: 25em;
+}
+.nav-color{
+    background-color: #ed017f ;
+}
+.shop-in{
+    width: 17em;
+    height: 2em;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: white;
+}
+.shop-but{
+    height: 2em;
+    border: none;
+    border-radius: none;    
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(226, 223, 12);
+}

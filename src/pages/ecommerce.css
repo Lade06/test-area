@@ -1,0 +1,26 @@
+.btn-cart{
+    width: 10em;
+    border-radius: none;
+    border: 2px solid #ed017f;
+    color: #ed017f;
+}
+.btn-cart:hover{
+    background: #ed017f;
+    color: white;
+
+}
+/* first-card */
+.shop-card2{
+    background: #ed017f;
+    color: white;
+}
+.btn-n{
+    color: #ed017f;
+}
+.btn-n:hover{
+    background-color: yellow;
+    color: white;
+}
+.p-text{
+    color: #ed017f;
+}
