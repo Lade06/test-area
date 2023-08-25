@@ -1,3 +1,4 @@
+
 .btn-cart{
     width: 10em;
     border-radius: none;
@@ -13,7 +14,9 @@
 .shop-card2{
     background: #ed017f;
     color: white;
+  
 }
+
 .btn-n{
     color: #ed017f;
 }
@@ -23,4 +26,5 @@
 }
 .p-text{
     color: #ed017f;
+     font-size: 12px;
 }

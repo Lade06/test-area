@@ -32,8 +32,8 @@ const Home = () => {
           <div className="col-md-6 mt-5">
             <img src={puzzle} alt="puzzle" />
             <img src={puzzle1} alt="puzzle" width={"100%"} className="mt-5" />
-            <img src={cubic1} alt="cubic" className="mt-5" />
-            <img src={incharge} alt="incharge" className="mt-5" />
+            <img src={cubic1} alt="cubic"  width={"100%"} height={"20%"}  className="mt-5" />
+            <img src={incharge} alt="incharge"  width={"100%"} height={"20%"}  className="mt-5" />
             <img src={projectidea} alt="project_idea" width={"100%"} height={"20%"} className="mt-5" />
 
           </div>
